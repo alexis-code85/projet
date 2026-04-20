@@ -1,0 +1,111 @@
+/*Première partie Circuit de Nurburgring*/
+
+.presentation {
+    display: flex;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.presentation h2 {
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+
+.presentation img {
+    width: 50%;
+    float: right;
+    padding: 10px;
+}
+
+.presentation p {
+    float: left;
+    width: 50%;
+    text-align: justify;
+    line-height: 25px;
+    padding: 10px;
+}
+
+
+/*Deuxième partie Histoire du circuit de NurBurGring*/
+
+.histoire {
+    display: flex;
+    width: 80%;
+}
+
+.histoire div {
+    float: right;
+    width: 50%;
+    
+}
+
+.histoire h2 {
+    margin-top: -20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.histoire p {
+    text-align: justify;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.histoire img {
+    float: left;
+    width: 50%;
+}
+
+
+/*Troisieme partie du main le tableau*/
+
+.tableau {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tableau h2 {
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+
+table tr {
+    text-align: center;
+}
+
+
+/*Quatrieme partie*/
+
+.bouton {
+    width: 80%;
+}
+
+
+.bouton ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.bouton a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 60px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.bouton h3 {
+    text-align: center;
+    padding: 25px;
+}
+
+
+footer{
+    display: inline-block;
+    width: 100%;
+}

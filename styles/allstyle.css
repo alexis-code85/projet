@@ -1,0 +1,96 @@
+/*Contenu pour toutes les pages mobile / desktop, donc le menu et le footer, logo icon etc..*/
+
+* {
+ box-sizing: border-box;   
+ padding: auto;
+ margin: auto;
+ transition: all 0.2s ease 0s;
+font-family: "Roboto";
+}
+
+
+header {
+    background-color: black;
+}
+
+nav img {
+    display: block;
+    width: 15%;
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style: none;
+    padding: 0 100px;
+    font-size: 30px;
+    
+}
+
+
+
+
+nav ul li:hover {
+    background-color: red;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+}
+
+
+footer section {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+footer img {
+    width: 15%;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.block {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: black;
+}
+
+footer h3 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.information h3
+ {
+    margin-top: -30px;
+}
+
+.contact h3 {
+    margin-top: -45px;
+}
+
+footer a,
+footer p,
+footer i {
+    padding: 2px;
+}
+
+.icon {
+    padding: 0 5px;
+    font-size: 30px;
+}
