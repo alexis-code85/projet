@@ -1,0 +1,269 @@
+h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+p {
+    text-align: justify;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+/*Première partie Circuit*/
+
+.presentation {
+    display: flex;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.presentation h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;  
+}
+
+
+.presentation img {
+    width: 50%;
+    float: right;
+    border-radius: 10px;
+}
+
+.presentation p {
+    float: left;
+    width: 50%;
+    line-height: 25px;
+    padding: 10px 15px;
+}
+
+
+/*Deuxième partie Histoire du circuit*/
+
+.histoire {
+    display: flex;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.histoire div {
+    float: right;
+    width: 50%;
+}
+
+.histoire h2 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.histoire p {
+    padding: 10px;
+}
+
+.histoire img {
+    float: left;
+    width: 40%;
+    margin-left: 40px;
+}
+
+.histoire article {
+    padding: 10px;
+}
+
+
+/*Troisieme partie du main le tableau*/
+
+.tableau {
+    width: 80%;
+    padding-bottom: 25px;
+}
+
+.tableau h2 {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:first-child td {
+    font-weight: 800;
+}
+
+/*Quatrieme partie boutons*/
+
+.bouton {
+    width: 80%;
+}
+
+
+.bouton ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.bouton a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 60px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.bouton a:hover {
+    background-color: red;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+}
+
+
+.bouton h3 {
+    text-align: right;
+    padding: 25px;
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    /*Première partie présentation*/
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .presentation article {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .presentation p {
+        width: 100%;
+    }
+
+    .presentation img {
+        width: 100%;
+    }
+
+
+    /*Deuxieme partie Histoire*/
+
+    .histoire {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .histoire article {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .histoire p {
+        width: 100%;
+    }
+
+    .histoire img {
+        width: 100%;
+        margin: auto;
+    }
+
+    .histoire div {
+        width: 100%;
+    }
+
+
+    /*Troisieme partie Tableau*/
+
+    .tableau {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .tableau h2 {
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        text-transform: uppercase;
+    
+    }
+
+
+       table {
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+        padding: 10px;
+        width: 50%;
+        float: left;
+        padding: 0px 0px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 2px solid black;
+        font-size: 16px;
+    }
+
+
+
+    /*Quatrieme Partie boutons liens externes*/
+
+    .bouton ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .bouton a {
+        margin: 10px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .bouton h3 {
+        text-align: center;
+    }
+}
+    
+
+

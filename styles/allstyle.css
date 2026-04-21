@@ -1,21 +1,37 @@
-/*Contenu pour toutes les pages mobile / desktop, donc le menu et le footer, logo icon etc..*/
+/*Contenu pour toutes les pages mobile / desktop, dont le menu et le footer, logo icon etc..*/
 
 * {
- box-sizing: border-box;   
- padding: auto;
- margin: auto;
- transition: all 0.2s ease 0s;
-font-family: "Roboto";
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+    font-family: "Roboto";
+    overflow-x: hidden;
+    max-width: 1700px;
 }
 
+/*Modification des images, ombres sauf le logo*/
+
+img:not(#logo) {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+/*Partie Header Menu*/
 
 header {
     background-color: black;
 }
 
+nav {
+    padding: 10px;
+}
+
 nav img {
-    display: block;
-    width: 15%;
+    display: flex;
+    width: 30%;
 }
 
 
@@ -32,10 +48,13 @@ nav ul li {
     list-style: none;
     padding: 0 100px;
     font-size: 30px;
-    
+
 }
 
-
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
 
 
 nav ul li:hover {
@@ -45,11 +64,16 @@ nav ul li:hover {
 }
 
 
-footer section {
+/*Partie Footer*/
+
+footer{
     background-color: black;
-    color: white;
+}
+
+footer section {
     display: flex;
-    padding-bottom: 10px;
+    color: white;
+    
 }
 
 footer img {
@@ -67,21 +91,17 @@ footer a {
 .block {
     color: rgb(255, 255, 255);
     text-align: center;
-    background-color: black;
+    margin-top: 15px;
 }
 
 footer h3 {
+    padding: 10px 0px;
     font-size: 20px;
     text-decoration: underline;
 }
 
-.information h3
- {
-    margin-top: -30px;
-}
-
-.contact h3 {
-    margin-top: -45px;
+footer div{
+    margin-top: 5px;
 }
 
 footer a,
@@ -91,6 +111,63 @@ footer i {
 }
 
 .icon {
+    margin-top: 10px;
     padding: 0 5px;
     font-size: 30px;
+}
+
+
+/*Partie Responsive du Menu et Footer Mobile / Tablette*/
+
+
+@media screen and (max-width: 1000px) {
+    header {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 60%;
+    }
+
+    nav a {
+        font-size: 30px;
+    }
+
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    footer img {
+        display: block;
+        width: 50%;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        padding: 25px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+    }
 }
